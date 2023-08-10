@@ -7,58 +7,11 @@
         "connect": "Connect",
         "sections": [
             {
-                "title": "CV",
-                "text": "Learn more about my experience, education, and skills.",
-                "href": "./cv",
-                "button": "View CV"
-            },
-            {
                 "title": "Blog",
                 "text": "Read my thoughts on web development, technology, and other topics that interest me.",
                 "href": "https://blog.svit.ac",
                 "button": "Visit Blog"
             }
         ]
-    },
-    "cv": {
-        "head": {
-            "page_title": "CV",
-            "page_description": "Kevin Svitač's CV"
-        },
-        "profile": "Profile",
-        "bio": "A young student who likes to code and learn new things.",
-        "experiences_title": "Experience",
-        "experiences": [
-            {
-                "title": "Part-time work - Sansec",
-                "startDate": "2022",
-                "endDate": "...",
-                "tasks": [
-                    "Conduct malware analysis of e-commerce websites and develop tools to aid in analysis.",
-                    "Collaborate with team members to improve existing tools and processes."
-                ],
-                "href": "https://sansec.io"
-            }
-        ],
-        "education_title": "Education",
-        "educations": [
-            {
-                "title": "Business Academy",
-                "school": "Business Academy Nitra, Slovakia",
-                "startDate": "2019",
-                "endDate": "2023",
-                "href": "https://oanitra.edupage.org"
-            }
-        ],
-        "skills_title": "Skills",
-        "projects_title": "Projects",
-        "projects": [
-            {
-                "title": "FreeFlarum",
-                "description": "A service to host Flarum forums for free. Currently it hosts + 3,000 online forums; + 20,000 forums have been created since 2017!",
-                "href": "https://freeflarum.com"
-            }
-        ],
-        "contact": "Contact"
     }
 }

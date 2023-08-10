@@ -7,58 +7,11 @@
         "connect": "Spojiť sa",
         "sections": [
             {
-                "title": "Životopis",
-                "text": "Dočítajte sa viac o mne, mojom vzdelaní a zručnostiach.",
-                "href": "./cv",
-                "button": "Zobraziť životopis"
-            },
-            {
                 "title": "Blog",
                 "text": "Prečitaj si niektoré z mojich článkov o témach, ktoré ma zaujali.",
                 "href": "https://blog.svit.ac",
                 "button": "Navštíviť blog"
             }
         ]
-    },
-    "cv": {
-        "head": {
-            "page_title": "Životopis",
-            "page_description": "Životopis Kevina Svitača"
-        },
-        "profile": "Profil",
-        "bio": "Mladý študent ktorý rád programuje a objavuje nové veci.",
-        "experiences_title": "Skúsenosti",
-        "experiences": [
-            {
-                "title": "Brigádnik - Sansec",
-                "startDate": "2022",
-                "endDate": "...",
-                "tasks": [
-                    "Vykonávanie analýzy malvéru na e-shopoch a vývoj nástrojov na pomoc pri analýze.",
-                    "Spolupráca s členmi tímu pre zlepšenie existujúcich nástrojov a postupov."
-                ],
-                "href": "https://sansec.io"
-            }
-        ],
-        "educations_title": "Vzdelanie",
-        "educations": [
-            {
-                "title": "Obchodná akadémia",
-                "school": "Obchodná Akadémia Nitra, Slovensko",
-                "startDate": "2019",
-                "endDate": "2023",
-                "href": "https://oanitra.edupage.org"
-            }
-        ],
-        "skills_title": "Zručnosti",
-        "projects_title": "Projekty",
-        "projects": [
-            {
-                "title": "FreeFlarum",
-                "description": "Služba ktorá poskytuje hosting zdarma pre Flarum internetové fóra. V súčanosti obsahuje viac ako 3,000 online fór, pričom od roku 2017 sa registrovalo viac ako 20,000 fór!",
-                "href": "https://freeflarum.com"
-            }
-        ],
-        "contact": "Kontakt"
     }
 }
