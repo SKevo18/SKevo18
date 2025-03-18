@@ -14,17 +14,7 @@ object RepoHandler {
     )
 
     private val specifiedRepos: Array<String> = arrayOf(
-        "FreeFlarum/freeflarum.com",
-        "Poznamkovac/poznamkovac-webulohy",
-        "SKevo18/idlemod",
-        "SKevo18/gopatch",
-        "SKevo18/pbs-decode",
-        "Skevo18/sokoban.py",
-        "SKevo18/mediawiki-updater",
-        "SKevo18/backend-projekt",
-        "SKevo18/unilluminated",
-        "SKevo18/glyfy",
-        "SKevo18/imdb_projekt_dt_2024",
+        
     )
 
     @Composable
