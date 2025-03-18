@@ -14,7 +14,7 @@ object RepoHandler {
     )
 
     private val specifiedRepos: Array<String> = arrayOf(
-        
+        "sansecio/magento2-module-shield"
     )
 
     @Composable
