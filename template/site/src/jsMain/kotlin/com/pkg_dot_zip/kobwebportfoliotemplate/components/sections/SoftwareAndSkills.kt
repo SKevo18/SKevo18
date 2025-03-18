@@ -122,52 +122,30 @@ private fun getToolBoxAreas(): List<ToolsBoxArea> = listOf(
     ToolsBoxArea("Frameworks", FRAMEWORKS) { Image(src = Res.AnimatedEmojis.MAN_JUGGLING, toolboxHeaderImageModifier) },
 )
 
-// USER TODO: Put All IDEs you use here.
 private val IDES: Collection<LinkableImage> = listOf(
-    LinkableImage("https://www.jetbrains.com/fleet/", Res.Software.FLEET_LOGO),
-    LinkableImage("https://www.jetbrains.com/clion/", Res.Software.CLION_LOGO),
-    LinkableImage("https://www.jetbrains.com/resharper-cpp/", Res.Software.RESHARPER_CPP_LOGO),
-    LinkableImage("https://www.jetbrains.com/resharper/", Res.Software.RESHARPER_CSHARP_LOGO),
-    LinkableImage("https://www.jetbrains.com/idea/", Res.Software.INTELLIJ_LOGO),
-    LinkableImage("https://www.jetbrains.com/go/", Res.Software.GOLAND_LOGO),
-    LinkableImage("https://www.jetbrains.com/rust/", Res.Software.RUSTROVER_LOGO),
-    LinkableImage("https://www.jetbrains.com/ruby/", Res.Software.RUBYMINE_LOGO),
+    LinkableImage("https://www.vscode.com/", Res.Software.VSCODE_LOGO),
 )
 
-// USER TODO: Put All Notable frameworks you use here.
 private val FRAMEWORKS: Collection<LinkableImage> = listOf(
-    LinkableImage("https://kobweb.varabyte.com/", Res.Frameworks.KOBWEB_LOGO),
-    LinkableImage("https://www.raylib.com/", Res.Frameworks.RAYLIB_LOGO),
-    LinkableImage("https://junit.org/junit5/", Res.Frameworks.JUNIT5_LOGO),
-    LinkableImage("https://square.github.io/kotlinpoet/", Res.Frameworks.KOTLIN_POET_LOGO),
-    LinkableImage("https://www.glfw.org/", Res.Frameworks.GLFW_LOGO),
-    LinkableImage("https://github.com/sheredom/utest.h", Res.Frameworks.UTEST_LOGO),
-    LinkableImage("https://opencv.org/", Res.Frameworks.OPENCV_LOGO),
-    LinkableImage("https://github.com/kordlib/kord", Res.Frameworks.KORD_LOGO),
+    LinkableImage("https://fastapi.tiangolo.com/", Res.Software.FASTAPI_LOGO),
+    LinkableImage("https://flask.palletsprojects.com/", Res.Software.FLASK_LOGO),
+    LinkableImage("https://gin-gonic.com/", Res.Software.GIN_LOGO),
+    LinkableImage("https://openjfx.io/", Res.Software.JAVA_FX_LOGO),
 )
 
-// USER TODO: Put All Other (relevant) software you use here.
 private val SOFTWARE: Collection<LinkableImage> = listOf(
-    LinkableImage("https://www.jetbrains.com/toolbox-app/", Res.Software.TOOLBOX_LOGO),
-    LinkableImage("https://f-droid.org/", Res.Software.FDROID_LOGO),
     LinkableImage("https://www.apachefriends.org/", Res.Software.XAMPP_LOGO),
-    LinkableImage("https://www.postman.com/", Res.Software.POSTMAN_LOGO),
-    LinkableImage("https://www.jetbrains.com/datalore/", Res.Software.DATALORE_LOGO),
-    LinkableImage("https://www.jetbrains.com/teamcity/", Res.Software.TEAMCITY_LOGO),
-    LinkableImage("https://www.jetbrains.com/youtrack/", Res.Software.YOUTRACK_LOGO),
-    LinkableImage("https://www.jetbrains.com/qodana/", Res.Software.QODANA_LOGO),
 )
 
-// USER TODO: Put All Programming language you are proficient in here.
 private val PROGRAMMING_LANGUAGES: Collection<LinkableImage> = listOf(
-    LinkableImage("https://en.wikipedia.org/wiki/C_(programming_language)", Res.Languages.C_LOGO),
     LinkableImage("https://en.wikipedia.org/wiki/C%2B%2B", Res.Languages.CPP_LOGO),
     LinkableImage("https://dotnet.microsoft.com/en-us/languages/csharp", Res.Languages.CSHARP_LOGO),
     LinkableImage("https://developer.mozilla.org/en-US/docs/Web/JavaScript", Res.Languages.JAVASCRIPT_LOGO),
     LinkableImage("https://dev.java/", Res.Languages.JAVA_LOGO),
-    LinkableImage("https://kotlinlang.org/", Res.Languages.KOTLIN_LOGO),
     LinkableImage("https://www.python.org/", Res.Languages.PYTHON_LOGO),
-    LinkableImage("https://fantom.org/", Res.Languages.FANTOM_LOGO),
+    LinkableImage("https://go.dev/", Res.Languages.GOLANG_LOGO),
+    LinkableImage("https://www.markdownguide.org/", Res.Languages.MARKDOWN_LOGO),
+    LinkableImage("https://html.spec.whatwg.org/multipage/", Res.Languages.HTML_LOGO),
 )
 
 data class ToolsBoxArea(

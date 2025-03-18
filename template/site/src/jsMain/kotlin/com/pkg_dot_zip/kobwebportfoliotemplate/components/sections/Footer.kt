@@ -93,11 +93,9 @@ fun Footer(modifier: Modifier = Modifier) {
     }
 }
 
-// USER TODO: Add your socials here!
 /**
  * All the socials you see on the bottom of the page in the footer. Feel free to add other socials!
  */
 private fun getFooterSocials(): Map<String, String> = mapOf(
-    "https://github.com/varabyte/" to Res.Socials.GITHUB_LOGO,
-    "https://www.linkedin.com/in/williamhgates/" to Res.Socials.LINKEDIN_LOGO,
+    "https://github.com/SKevo18/" to Res.Socials.GITHUB_LOGO,
 )

@@ -7,15 +7,24 @@ import org.w3c.fetch.Request
 
 object RepoHandler {
 
-    // USER TODO: Put your own username(s) here!
     private val users: Array<String> = arrayOf(
-        "varabyte",
-//        "JetBrains"
+        "SKevo18",
+        "FreeFlarum",
+        "Poznamkovac",
     )
 
-    // USER TODO: Put your own repos here. Format is 'Owner/Repo'
     private val specifiedRepos: Array<String> = arrayOf(
-//        "square/okhttp"
+        "FreeFlarum/freeflarum.com",
+        "Poznamkovac/poznamkovac-webulohy",
+        "SKevo18/idlemod",
+        "SKevo18/gopatch",
+        "SKevo18/pbs-decode",
+        "Skevo18/sokoban.py",
+        "SKevo18/mediawiki-updater",
+        "SKevo18/backend-projekt",
+        "SKevo18/unilluminated",
+        "SKevo18/glyfy",
+        "SKevo18/imdb_projekt_dt_2024",
     )
 
     @Composable
@@ -95,8 +104,6 @@ object RepoHandler {
 
     private fun shouldSkipRepo(repository: Repository): Boolean {
         if (repository.fork!!) return true // Skip all forks.
-
-        // USER TODO: Add more repos to skip here if needed!
 
         return false
     }

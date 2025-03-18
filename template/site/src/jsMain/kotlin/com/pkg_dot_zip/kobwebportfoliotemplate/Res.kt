@@ -6,7 +6,7 @@ object Res {
     private const val IMAGE_PATH = "/image/"
     const val LOGO_LIGHT = "$IMAGE_PATH/kobweb-logo.png"
     const val LOGO_DARK = "$IMAGE_PATH/kobweb-logo.png"
-    const val OCTOCAT = "$IMAGE_PATH/octocat.png" // Created with https://myoctocat.com/build-your-octocat/ // USER TODO: Make sure to add your own octocat since it's really fun!
+    const val OCTOCAT = "$IMAGE_PATH/octocat.png" // Created with https://myoctocat.com/build-your-octocat/
 
     object Socials {
         private const val SOCIALS = "${IMAGE_PATH}socials/"
@@ -44,6 +44,12 @@ object Res {
 
     object Software {
         private const val SOFTWARE = "${IMAGE_PATH}software/"
+
+        const val FASTAPI_LOGO = "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+        const val FLASK_LOGO = "https://flask.palletsprojects.com/en/stable/_static/flask-vertical.png"
+        const val GIN_LOGO = "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png"
+        const val JAVA_FX_LOGO = "https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png"
+
         const val INTELLIJ_LOGO = "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
         const val AQUA_LOGO = "https://resources.jetbrains.com/storage/products/company/brand/logos/Aqua_icon.svg"
         const val CLION_LOGO = "https://resources.jetbrains.com/storage/products/company/brand/logos/CLion_icon.svg"
@@ -74,6 +80,7 @@ object Res {
         const val WEBSTORM_LOGO = "https://resources.jetbrains.com/storage/products/company/brand/logos/WebStorm_icon.svg"
         const val YOUTRACK_LOGO = "https://resources.jetbrains.com/storage/products/company/brand/logos/YouTrack_icon.svg"
         const val VS_LOGO = "https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg"
+        const val VSCODE_LOGO = "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
         const val XAMPP_LOGO = "https://www.svgrepo.com/show/354575/xampp.svg"
         const val FDROID_LOGO = "https://upload.wikimedia.org/wikipedia/commons/3/3c/F-Droid_Logo_4.svg"
         const val POSTMAN_LOGO = "https://www.svgrepo.com/show/354202/postman-icon.svg"

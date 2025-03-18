@@ -4,7 +4,6 @@ import com.pkg_dot_zip.kobwebportfoliotemplate.Res
 
 object SpecialDateHandler {
 
-    // USER TODO: Add special date for you if you want!
     /**
      * These are hardcoded emojis that will be displayed on a specific date.
      * The specialDateText will be displayed in the Footer.
@@ -12,22 +11,16 @@ object SpecialDateHandler {
      * For questions about priority see [getValueOnSpecialDate].
      */
     private fun getSpecialDates(): Set<SpecialDate> = setOf(
-        SpecialDate(WebDate(months = 9, days = 16)).apply {
-            title = "Portfolio birthday"
-            specialDateText = "Happy Birthday to my portfolio!"
+        SpecialDate(WebDate(months = 3, days = 18)).apply {
+            title = "Site birthday"
+            specialDateText = "Happy Birthday to this site!"
             frontPageEmoji = Res.AnimatedEmojis.PARTYING_FACE
         },
 
-        SpecialDate(WebDate(months = 7, days = 25)).apply {
-            title = "Kobweb birthday"
-            specialDateText = "Happy Birthday to Kobweb!"
+        SpecialDate(WebDate(months = 5, days = 2)).apply {
+            title = "Birthday"
+            specialDateText = "Happy Birthday to... me?!"
             frontPageEmoji = Res.AnimatedEmojis.PARTYING_FACE
-        },
-
-        SpecialDate(WebDate(months = 7, days = 25)).apply {
-            title = "National Foundation Day in Japan"
-            specialDateText = "Happy national foundation day Japan!"
-            frontPageEmoji = Res.AnimatedEmojis.CROSSED_FLAGS
         },
     )
 
