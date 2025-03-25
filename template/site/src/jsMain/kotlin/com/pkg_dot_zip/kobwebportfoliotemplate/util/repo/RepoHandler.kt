@@ -94,6 +94,7 @@ object RepoHandler {
 
     private fun shouldSkipRepo(repository: Repository): Boolean {
         if (repository.fork!!) return true // Skip all forks.
+        if (repository.archived!!) return true // Skip all archived repos.
 
         return false
     }
