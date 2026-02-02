@@ -17,54 +17,21 @@ concurrency:
 jobs:
     build:
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
-
-        env:
-            KOBWEB_CLI_VERSION: 0.9.18
-            # FIXME: modify this to use the root directory of the repository (./)
-            ROOT_DIR: template
 
         steps:
             - uses: actions/checkout@v4
 
-            - name: Set up JDK
-              uses: actions/setup-java@v4
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
               with:
-                  java-version: "17"
-                  distribution: "temurin"
+                  node-version: "20"
+                  cache: "npm"
 
-            - name: Setup Gradle
-              uses: gradle/actions/setup-gradle@v4
-
-            - name: Query Browser Cache ID
-              id: browser-cache-id
-              run: echo "value=$(./${{ env.ROOT_DIR }}/gradlew -q :${{ env.ROOT_DIR }}/site:kobwebBrowserCacheId)" >> $GITHUB_OUTPUT
-
-            - name: Cache Browser Dependencies
-              uses: actions/cache@v4
-              id: playwright-cache
-              with:
-                  path: ~/.cache/ms-playwright
-                  key: ${{ runner.os }}-playwright-${{ steps.browser-cache-id.outputs.value }}
-
-            - name: Fetch kobweb
-              uses: robinraju/release-downloader@v1.10
-              with:
-                  repository: "varabyte/kobweb-cli"
-                  tag: "v${{ env.KOBWEB_CLI_VERSION }}"
-                  fileName: "kobweb-${{ env.KOBWEB_CLI_VERSION }}.zip"
-                  tarBall: false
-                  zipBall: false
-
-            - name: Unzip kobweb
-              run: unzip kobweb-${{ env.KOBWEB_CLI_VERSION }}.zip
+            - name: Install dependencies
+              run: npm ci
 
             - name: Build site
-              run: |
-                  cd ${ROOT_DIR}/site
-                  ../../kobweb-${{ env.KOBWEB_CLI_VERSION }}/bin/kobweb export --layout static --notty
+              run: npm run build
 
             - name: Setup Pages
               uses: actions/configure-pages@v4
@@ -72,7 +39,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: "${{ env.ROOT_DIR }}/site/.kobweb/site"
+                  path: "dist"
 
     deploy:
         environment:
